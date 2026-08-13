@@ -50,14 +50,14 @@ class OnboardingController extends StateNotifier<OnboardingState> {
             label: starter.label,
             type: ItemType.filler,
             defaultValue: starter.defaultValue,
-            selected: true,
+            selected: false,
           ),
         for (final starter in starters.emptiers)
           SelectableItem(
             label: starter.label,
             type: ItemType.emptier,
             defaultValue: starter.defaultValue,
-            selected: true,
+            selected: false,
           ),
       ];
       state = state.copyWith(isLoadingStarters: false, items: items);
