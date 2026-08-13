@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "uk.me.headroom.headroom"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = 37
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
